@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Семенов Р.А.</title>
+  <style>
+    .responsive-image {
+    width: 25%;
+    height: auto; 
+  }
+  </style>
+</head>
+<body>
+  <h1>Ссылки</h1>
+  <ul>
+    <li><a href="http://kubsu.ru/">КубГУ (http)</a></li>
+    <li><a href="https://kubsu.ru/">КубГУ (https)</a></li>
+    <li><a href="https://kubsu.ru/"><img src="img/image.jpg" alt="Картинка"class = "responsive-image" ></a></li>
+    <li><a href="Catalog/second-page.html">Сокращённая внутренняя</a></li>
+    <li><a href="MainPage.html">Сокращённая главная</a></li>
+    <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="https://www.kubsu.ru/ru/taxonomy/term/49?page=1&perpage=10&category=post">Ссылка с тремя параметрами</a></li>
+    <li><a href="https://www.kubsu.ru/ru/taxonomy/term/49?id=#zone-footer-wrapper">Ссылка с параметром id</a></li>
+    <li><a href="./MainPage.html">относительная ссылка в текущем каталоге</a></li>
+    <li><a href="./about/about.html">относительная ссылка в каталоге about</a></li>
+    <li><a href="./Catalog/third-page.html">На уровень выше</a></li>
+    <li><a href="./Catalog/catalog2/fourth-page.html">На два уровня выше</a></li>
+    <li>В тексте <a href="https://kubsu.ru/">ссылка</a> внутри абзаца.</li>
+    <li><a href="https://example.com/page#section-id">Фрагмент стороннего сайта</a></li>
+    <li>
+      <map name="kartinka">
+        <area shape="recet" coords="35,35,350,190" href="https://kubsu.ru" alt="Сайт кубгу, прямоугольник">
+        <area shape="circle" coords="180,375,125" href="https://kubsu.ru/index.php" alt="Сайт кубгу, круг">
+        <img src="img/kartinka.jpg" usemap="#kartinka" alt="Картинка" style="width: 400px; height: auto;"> 
+      </map>
+    </li>
+    <li><a href="">Пустой href</a></li>
+    <li><a>Без href</a></li>
+    <li><a href="https://kubsu.ru/" rel="nofollow">nofollow</a></li>
+    <li><a href="https://kubsu.ru/noindex.html" rel="noindex">noindex</a></li>
+  </ul>
+
+  <li>
+    <ol>
+        <li>
+            <a href="http://kubsu.ru" tite="Вот"> Сайт КубГУ</a>
+        </li>
+        <li>
+            <a href="http://kubsu.ru" tite="Сайт"> Сайт КубГУ</a>
+        </li>
+        <li>
+            <a href="http://kubsu.ru" tite="КубГУ"> Сайт КубГУ</a>
+        </li>
+    </ol>
+</li>
+
+  <li><a href="ftp://username:password@ftp.example.com/path/to/file.txt">Скачать файл</a></li>
+
+  <h2 id="form">Форма</h2>
+  <form action="#" method="post">
+    <table>
+      <tr>
+        <td><label for="fio">ФИО</label></td>
+        <td><input type="text" id="fio" name="fio" required></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Телефон</label></td>
+        <td><input type="tel" id="phone" name="phone" pattern="[0-9]+" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="bday">Дата рождения</label></td>
+        <td><input type="date" id="bday" name="bday" required></td>
+      </tr>
+      <tr>
+        <td>Пол</td>
+        <td>
+          <label><input type="radio" name="gender" value="m" required> Мужской</label>
+          <label><input type="radio" name="gender" value="f"> Женский</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="langs">Любимый язык</label></td>
+        <td>
+          <select id="langs" name="langs[]" multiple required>
+            <option>Pascal</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>JavaScript</option>
+            <option>PHP</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>Haskell</option>
+            <option>Clojure</option>
+            <option>Prolog</option>
+            <option>Scala</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="bio">Биография</label></td>
+        <td><textarea id="bio" name="bio" rows="5" cols="40" required></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label><input type="checkbox" name="agree" required> С контрактом ознакомлен</label></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Сохранить"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
